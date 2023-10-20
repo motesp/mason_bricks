@@ -5,7 +5,8 @@ void main() {
   // String? selectedItem;
 
   // Widget
-  // no lint here
+  // no lint here Warning is this line changed you have parse error
+  //  final testWidget = {{fileName.pascalCase()}}(); parser needs oneline!
   final testWidget = {{fileName.pascalCase()}}();
 
   testWidgets(
