@@ -10,7 +10,7 @@ void main() {
   }();
 
   testWidgets(
-    'Test for Widget {fileName.pascalCase()}}',
+    'Test for Widget {{fileName.pascalCase()}}',
     (WidgetTester tester) async {
       basicTest(
         testWidget,

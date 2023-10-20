@@ -1,6 +1,6 @@
 name: mp_test
 description: A brick to produce boilerplate code for new feature using riverpod
-version: 0.1.1+5
+version: 0.1.6+6
 repository: https://github.com/GJJ2019/mason_bricks/tree/main/bricks/riverpod_widget
 
 environment:
