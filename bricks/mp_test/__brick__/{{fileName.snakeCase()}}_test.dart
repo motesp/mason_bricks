@@ -5,9 +5,8 @@ void main() {
   // String? selectedItem;
 
   // Widget
-  final testWidget = {
-    {fileName.pascalCase()}
-  }();
+  // no lint here
+  final testWidget = {{fileName.pascalCase()}}();
 
   testWidgets(
     'Test for Widget {{fileName.pascalCase()}}',
@@ -20,7 +19,7 @@ void main() {
           // expect(find.text('Test Subtitle'), findsOneWidget);
 
           // //ACT
-          // await tester.tap(find.byType({{FileName}}));
+          // await tester.tap(find.byType({{fileName.pascalCase()}}));
           // await tester.pump();
 
           //  // ASSERT
