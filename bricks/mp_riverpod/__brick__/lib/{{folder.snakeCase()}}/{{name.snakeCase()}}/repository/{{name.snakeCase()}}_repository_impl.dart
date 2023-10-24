@@ -1,16 +1,18 @@
+import 'package:app/core/providers/dio_provider.dart';
+import 'package:app/features/{{name.snakeCase()}}/repository/{{name.snakeCase()}}_repository.dart';
 import 'package:dio/dio.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '{{name.snakeCase()}}_repository.dart';
+part '{{name.snakeCase()}}_repository_impl.g.dart';
 
 class {{name.pascalCase()}}RepositoryImpl extends {{name.pascalCase()}}Repository {
-  {{name.pascalCase()}}RepositoryImpl(this.dio);
+  {{name.pascalCase()}}RepositoryImpl({required this.dio});
   final Dio dio;
 
-  // TODO add your methods here
+  // Add code here
 }
 
-final {{name.camelCase()}}RepositoryProvider = Provider<{{name.pascalCase()}}Repository>((ref) {
-  final dio = ref.watch<Dio>(dioProvider);
-  return {{name.pascalCase()}}RepositoryImpl(dio);
-});
+@riverpod
+{{name.pascalCase()}}Repository {{name.camelCase()}}Repository({{name.pascalCase()}}RepositoryRef ref) =>
+    {{name.pascalCase()}}RepositoryImpl(dio: ref.watch(dioProvider));
+    
