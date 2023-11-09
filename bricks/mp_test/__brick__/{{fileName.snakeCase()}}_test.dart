@@ -1,18 +1,20 @@
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  // SETUP: Initialize callback variables, etc.
-  // String? selectedItem;
 
-  // Widget
-  // no lint here Warning is this line changed you have parse error
-  //  final testWidget = {{fileName.pascalCase()}}(); parser needs oneline!
-  final testWidget = {{fileName.pascalCase()}}();
 
   testWidgets(
     'Test for Widget {{fileName.pascalCase()}}',
     (WidgetTester tester) async {
+      // SETUP: Initialize callback variables, etc.
+      // String? selectedItem;
+    
+      // Widget
+      final testWidget =  {{fileName.pascalCase()}}();
+        
+    
       screenSizeTester(
+        tester,
         testWidget,
         action: () async {
           // // FIND
