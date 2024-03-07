@@ -9,10 +9,14 @@ class {{name.pascalCase()}}RepositoryImpl extends {{name.pascalCase()}}Repositor
   {{name.pascalCase()}}RepositoryImpl({required this.dio});
   final Dio dio;
 
-  // Add code here
+  // TODO: Replace with your implementation that probably fetch data from the API
+
+  Future<String> getData() async {
+    return 'Hello from {{name.pascalCase()}}RepositoryImpl';
+  }
+
 }
 
 @riverpod
 {{name.pascalCase()}}Repository {{name.camelCase()}}Repository({{name.pascalCase()}}RepositoryRef ref) =>
     {{name.pascalCase()}}RepositoryImpl(dio: ref.watch(dioProvider));
-    

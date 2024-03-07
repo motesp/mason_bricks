@@ -1,3 +1,6 @@
 abstract class {{name.pascalCase()}}Repository {
-  // Add function signatures here
+  
+  // TODO: Replace with your function signatures
+  
+  Future<String> getData();
 }
