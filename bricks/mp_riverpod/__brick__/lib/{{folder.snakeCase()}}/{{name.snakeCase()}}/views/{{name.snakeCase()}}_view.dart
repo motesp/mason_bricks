@@ -58,7 +58,7 @@ Optional
       leading: const Icon(Icons.agriculture),
       title: const Text('{{name.pascalCase()}}'),
       onTap: () => {
-        context.pushNamed('{{name.snakeCase()}}'),
+        context.pushNamed(AppRoutes.{{name.pascalCase()}}),
       },
     ),
 
