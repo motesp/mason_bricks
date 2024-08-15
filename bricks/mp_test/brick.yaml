@@ -16,14 +16,9 @@ vars:
     type: string
     description:
     default: b
-    prompt: What is your widget fileName?
+    prompt: What is your widget filepath?
   newFilePath:
     type: string
     description:
     default: a
-    prompt: What is your widget fileName?
-  basicTestReltiveFilePath:
-    type: string
-    description:
-    default: a
-    prompt: What is your widget fileName?
+    prompt: What is your widget test filePath?
