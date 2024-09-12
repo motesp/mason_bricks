@@ -10,7 +10,7 @@ vars:
   folder:
     type: enum
     values:
-      - common
+      - core
       - features
     description: Choose a folder type for your module
     default: features
