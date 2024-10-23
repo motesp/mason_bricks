@@ -22,3 +22,8 @@ vars:
     description:
     default: a
     prompt: What is your widget test filePath?
+  relativeFilePath:
+    type: string
+    description:
+    default: d
+    prompt: What is your widget relative filePath?

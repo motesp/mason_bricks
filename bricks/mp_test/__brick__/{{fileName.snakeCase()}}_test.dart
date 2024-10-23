@@ -1,4 +1,8 @@
+import 'package:app/{{{relativeFilePath}}}';
 import 'package:flutter_test/flutter_test.dart';
+
+import '../../../utils/default_provider_scope_widget.dart';
+import '../../../utils/screen_size_tester.dart';
 
 void main() {
 
@@ -10,10 +14,9 @@ void main() {
       // String? selectedItem;
     
       // Widget
-      final testWidget =  {{fileName.pascalCase()}}();
-        
-    
-      screenSizeTester(
+      final testWidget = DefaultProviderScopeWidget(child: {{fileName.pascalCase()}}());
+            
+      await screenSizeTester(
         tester,
         testWidget,
         action: () async {
