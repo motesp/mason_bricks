@@ -2,10 +2,14 @@ import 'package:app/{{{relativeFilePath}}}';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../utils/default_provider_scope_widget.dart';
+import '../../../utils/font_loader.dart';
 import '../../../utils/screen_size_tester.dart';
 
 void main() {
-
+  setUpAll(() async {
+    //autoUpdateGoldenFiles = true;
+    await loadTestFonts();
+  });
 
   testWidgets(
     'Test for Widget {{fileName.pascalCase()}}',
